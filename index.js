@@ -36,10 +36,6 @@ app.all('/*', function(req, res, next) {
   next()
 })
 
-app.get("/", async function (req, res) {
-  res.redirect('https://www.apimau.ga')
-})
-
 app.get('/igs', (req, res) => {
 	var url = req.query.u || req.query.username
 	if(!url || url == undefined)
