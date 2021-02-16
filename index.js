@@ -333,10 +333,6 @@ app.get('/wpusers', (req, res) => {
 	})
 })
 
-app.get('*', function(req, res){
-    res.redirect('https://www.apimau.ga')
-})
-
 app.listen(PORT, () => {
   console.log(`server running on port ${PORT}`)
 })
