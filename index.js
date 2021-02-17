@@ -34,7 +34,7 @@ app.all('/*', function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*")
   res.header("Access-Control-Allow-Headers", "X-Requested-With")
   next()
-})
+});
 
 app.get('/igs', (req, res) => {
 	var url = req.query.u || req.query.username
@@ -331,7 +331,7 @@ app.get('/wpusers', (req, res) => {
 	}).catch(err => {
 		res.send(err)
 	})
-})
+});
 
 app.listen(PORT, () => {
   console.log(`server running on port ${PORT}`)
